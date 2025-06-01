@@ -33,7 +33,7 @@ def generate_response(prompt):
         print("ERROR:",response.text)
 
 #interface
-port=int(os.environ.get('PORT',100000))
+port=int(os.environ.get('PORT',10000))
 
 interface=gr.Interface(
     fn=generate_response,
