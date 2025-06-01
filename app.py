@@ -1,6 +1,7 @@
 import requests
 import json
 import gradio as gr
+import os
 
 url="http://localhost:11434/api/generate"
 
@@ -32,10 +33,11 @@ def generate_response(prompt):
         print("ERROR:",response.text)
 
 #interface
+port=int(os.environ.get('PORT',100000))
 
 interface=gr.Interface(
     fn=generate_response,
     inputs=gr.Textbox(lines=4,placeholder="Enter your Prompt"),
     outputs="text"
 )
-interface.launch()
+interface.launch(server_name="0.0.0.0",server_port=port)
