@@ -1,0 +1,23 @@
+prompt,output,timestamp
+Provide me the C++ code for addition of 3 numbers,"Great! I am CodeAstra, your coding companion. Here's a simple C++ program that adds three numbers using variables:
+```
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // Declare and initialize the variables
+    int x = 5;
+    int y = 10;
+    int z = 2;
+
+    // Add the values of x, y, and z using operator overloading
+    int sum = x + y + z;
+
+    cout << ""The sum is: "" << sum << endl; 
+    return 0;
+}
+```
+In this program, we have declared three variables `x`, `y`, and `z` of type `int`. We then initialized them with the values `5`, `10`, and `2`, respectively. Finally, we used operator overloading to add the values of these variables together and store the result in a new variable named `sum`.
+
+Note that this program uses the `cout` statement to display the sum on the console, which is one way to output data in C++.",2025-06-01 15:11:44.115005
